@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="900.0" styleClass="gridPane" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="600" prefWidth="900" styleClass="anchorPane">
+            <children>
+
+
+                <TableView fx:id="table" layoutY="0" prefHeight="500" prefWidth="900.0" styleClass="tableView">
+                    <columns>
+                        <TableColumn fx:id="fileColumn" prefWidth="408.0" styleClass="fileCol" text="File" />
+                        <TableColumn fx:id="actualClassColumn" prefWidth="221.0" styleClass="actualClassCol" text="Actual Class" />
+                        <TableColumn fx:id="probabilityColumn" prefWidth="270.0" styleClass="probabilityCol" text="Spam Probability" />
+                    </columns>
+                </TableView>
+
+                <Label layoutX="14.0" layoutY="517.0" text="Accuracy:" />
+                <Label layoutX="14.0" layoutY="558.0" text="Precision:" />
+                <TextField fx:id="accuracyID" layoutX="86.0" layoutY="512.0" styleClass="textField" />
+                <TextField fx:id="precisionID" layoutX="86.0" layoutY="552.0" styleClass="textField" />
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
